@@ -1,3 +1,3 @@
 # PromProgram4
 ![Screenshot](screenshot.png)
-![Screenshot1](screenshot.png)
+![Screenshot](screenshot1.png)
