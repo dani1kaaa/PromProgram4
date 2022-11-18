@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="edk6_lab4">
+    <class name="Animals" table="animals">
+        <id name="id" column="id" unsaved-value="null">
+            <generator class="native"/>
+        </id>
+
+	<many-to-one name="classifications" column="classificationID" class="Classifications" cascade="all"/>
+        <property name="temperatyre" column="temperatyre"/>
+        <property name="weatherNight" column="weatherNight"/>
+    </class>
+</hibernate-mapping>
